@@ -229,7 +229,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus,
     &:active {
-      outline-color: ${colors.blue};
+      outline-color: ${colors.pink};
     }
   }
 
