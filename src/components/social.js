@@ -11,7 +11,7 @@ const SocialContainer = styled.div`
   position: fixed;
   bottom: 0;
   left: 40px;
-  color: ${colors.lightSlate};
+  color: ${colors.slate};
   ${media.desktop`left: 25px;`};
   ${media.tablet`display: none;`};
 `;
@@ -25,7 +25,7 @@ const SocialItemList = styled.ul`
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: ${colors.lightSlate};
+    background-color: ${colors.slate};
   }
 `;
 const SocialItem = styled.li`
@@ -37,7 +37,7 @@ const SocialLink = styled.a`
   padding: 10px;
   &:hover,
   &:focus {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
   svg {
     width: 18px;
@@ -63,10 +63,10 @@ const Social = () => {
                 socialMedia.map(({ url, name }, i) => (
                   <SocialItem key={i}>
                     <SocialLink
-                      href={url}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      aria-label={name}>
+                        href={url}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label={name}>
                       <FormattedIcon name={name} />
                     </SocialLink>
                   </SocialItem>

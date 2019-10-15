@@ -27,7 +27,7 @@ const ContentContainer = styled.div`
 const FeaturedLabel = styled.h4`
   font-size: ${fontSizes.smallish};
   font-weight: normal;
-  color: ${colors.green};
+  color: ${colors.lightestSlate};
   font-family: ${fonts.SFMono};
   margin-top: 10px;
   padding-top: 0;
@@ -36,7 +36,7 @@ const ProjectName = styled.h5`
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 20px;
-  color: ${colors.lightestSlate};
+  color: ${colors.grey};
   ${media.tablet`font-size: 24px;`};
   ${media.thone`color: ${colors.white};`};
   a {
@@ -93,7 +93,7 @@ const Links = styled.div`
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: ${colors.lightestSlate};
+  color: ${colors.grey};
   a {
     padding: 10px;
     svg {

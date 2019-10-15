@@ -122,7 +122,10 @@ const About = ({ data }) => {
           </SkillsContainer>
         </ContentContainer>
         <PicContainer>
-          <AvatarContainer href={github}>
+          <AvatarContainer
+              href={github}
+              target="_blank"
+              rel="nofollow noopener noreferrer">
             <Avatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
           </AvatarContainer>
         </PicContainer>
