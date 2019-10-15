@@ -9,25 +9,37 @@
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/likarajo/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/0ae756bc-066c-4dc8-a30a-b08db2c74857/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/eaecc789-757c-4260-9bee-035d2154ab7c/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
 ## Installation and Setup
+1.  **Install [NVM](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)**
 
-1.  **Install the Gatsby CLI**
+2.  **Create *.nvmrc* file in the project directory**
+
+    ```sh
+    touch .nvmrc
+    vi .nvmrc
+    ```
+    Specify the *Node.js* version in this file.<br>
+    This is the project-specific version that will be installed using *nvm*. 
+    
+3.  **Install Node using NVM**
+
+   ```sh
+   nvm install
+   ```
+   
+   This installs Node.js and NPM.
+
+4.  **Install the Gatsby CLI using NPM**
 
    ```sh
    npm install -g gatsby-cli
    ```
 
-2.  **Install Node using [NVM](https://github.com/nvm-sh/nvm)
-
-   ```sh
-   nvm install
-   ```
-
-3.  **Create a Gatsby site**
+5.  **Create a Gatsby site**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
 
@@ -36,7 +48,7 @@
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
 
-4.  **Start developing**
+6.  **Start developing**
 
     Navigate into the new site’s directory and start it up
 
@@ -45,13 +57,18 @@
     gatsby develop
     ```
 
-3.  **Open the source code and start editing**
+7.  **Open the source code and start editing**
 
-    The site is now running at `http://localhost:8000`!
+    The site runs at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    **Note**: `http://localhost:8000/___graphql` is a tool to experiment with querying the data.<br>
+    [graphiql Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    The `my-default-starter` directory can be opened and edited in the code editor. Saving the changes makes the browser update in real time!
+    
+8.  **Develop, Build, Serve**
+
+    [Reference](https://www.gatsbyjs.org/tutorial/)
 
 ## Project directory structure
 
@@ -77,7 +94,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`.prettierrc`**: (Optional) This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
 5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
@@ -89,11 +106,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`package-lock.json`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`README.md`**: A text file containing useful reference information about the project.
 
 ## Learning Gatsby
 
