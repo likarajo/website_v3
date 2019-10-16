@@ -27,7 +27,7 @@ const theme = {
     darkBlue: '#1D7FFC',
     highlight: 'rgba(41, 61, 90, 0.99)',
     transGreen_o: 'rgba(100, 255, 218, 0.07)',
-    transGreen: 'rgba(200,146,169,0.51)',
+    transGreen: 'rgba(114,70,78,0.28)',
     transNavy: 'rgba(10, 25, 47, 0.7)',
     shadowNavy: 'rgb(44,19,87)',
   },
