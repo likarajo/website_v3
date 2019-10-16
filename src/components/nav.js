@@ -15,7 +15,7 @@ const NavContainer = styled.header`
   position: fixed;
   top: 0;
   padding: 0px 50px;
-  background-color: ${colors.navy};
+  background-color: ${colors.white};
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
@@ -35,7 +35,7 @@ const Navbar = styled.nav`
   ${mixins.flexBetween};
   position: relative;
   width: 100%;
-  color: ${colors.lightestSlate};
+  color: ${colors.purple};
   font-family: ${fonts.SFMono};
   counter-reset: item 0;
   z-index: 12;
@@ -142,6 +142,7 @@ const NavListItem = styled.li`
   font-size: ${fontSizes.smallish};
   counter-increment: item 1;
   &:before {
+    display: none;
     content: '0' counter(item) '.';
     text-align: right;
     color: ${colors.green};
@@ -238,7 +239,7 @@ class Nav extends Component {
             {isMounted && (
               <CSSTransition classNames="fade" timeout={3000}>
                 <Logo>
-                  <LogoLink href="/" aria-label="home">
+                  <LogoLink href="#" aria-label="home">
                     <IconLogo />
                   </LogoLink>
                 </Logo>

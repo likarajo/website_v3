@@ -14,16 +14,17 @@ const Heading = styled.h3`
   ${media.tablet`font-size: 24px;`};
 
   &:before {
-    counter-increment: section;
-    content: '0' counter(section) '.';
-    margin-right: 10px;
-    font-family: ${fonts.SFMono};
-    font-weight: normal;
-    color: ${colors.green};
-    font-size: ${fontSizes.xlarge};
+    content: '';
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: ${colors.mediumGrey};
     position: relative;
-    bottom: 4px;
-    ${media.tablet`font-size: ${fontSizes.large};`};
+    top: -5px;
+    margin-right: 20px;
+    ${media.desktop`width: 200px`};
+    ${media.tablet`width: 100%;`};
+    ${media.thone`margin-left: 10px;`};
   }
 
   &:after {

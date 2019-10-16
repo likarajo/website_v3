@@ -80,7 +80,8 @@ const Tab = styled.button`
   `};
   &:hover,
   &:focus {
-    background-color: ${colors.lightNavy};
+    background-color: ${colors.purple};
+    background-color: ${colors.white};
   }
 `;
 const Highlighter = styled.span`
@@ -155,7 +156,7 @@ const TabContent = styled.div`
   }
 `;
 const JobTitle = styled.h4`
-  color: ${colors.lightestSlate};
+  color: ${colors.grey};
   font-size: ${fontSizes.xxlarge};
   font-weight: 500;
   margin-bottom: 5px;
@@ -168,7 +169,7 @@ const JobDetails = styled.h5`
   font-size: ${fontSizes.smallish};
   font-weight: normal;
   letter-spacing: 0.5px;
-  color: ${colors.lightSlate};
+  color: ${colors.lightGrey};
   margin-bottom: 30px;
   svg {
     width: 15px;

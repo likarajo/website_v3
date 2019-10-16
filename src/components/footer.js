@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {
   IconGithub,
   IconLinkedin,
-  IconCodepen,
   IconInstagram,
   IconTwitter,
   IconStar,
@@ -18,14 +17,14 @@ const FooterContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
   padding: 15px;
-  background-color: ${colors.darkNavy};
-  color: ${colors.slate};
+  background-color: ${colors.white};
+  color: ${colors.grey};
   text-align: center;
   height: auto;
   min-height: 70px;
 `;
 const SocialContainer = styled.div`
-  color: ${colors.lightSlate};
+  color: ${colors.grey};
   width: 100%;
   max-width: 270px;
   margin: 0 auto 10px;
@@ -83,8 +82,6 @@ const Footer = ({ githubInfo }) => (
                   <IconGithub />
                 ) : name === 'Linkedin' ? (
                   <IconLinkedin />
-                ) : name === 'Codepen' ? (
-                  <IconCodepen />
                 ) : name === 'Instagram' ? (
                   <IconInstagram />
                 ) : name === 'Twitter' ? (
@@ -99,10 +96,13 @@ const Footer = ({ githubInfo }) => (
     </SocialContainer>
     <Copy>
       <div>
-        &copy; <a href="https://github.com/likarajo/" target="_blank">likarajo</a> 2019
+        &copy; <a
+          href={"https://github.com/likarajo/"}
+          target="_blank"
+          rel="nofollow noopener noreferrer">likarajo</a> 2019
       </div>
       <GithubLink
-        href="https://github.com/likarajo/website_new"
+        href="https://github.com/likarajo/website"
         target="_blank"
         rel="nofollow noopener noreferrer">
         {githubInfo.stars && githubInfo.forks && (

@@ -10,7 +10,7 @@ const EmailContainer = styled.div`
   position: fixed;
   bottom: 0;
   right: 40px;
-  color: ${colors.lightSlate};
+  color: ${colors.slate};
   ${media.desktop`right: 25px;`};
   ${media.tablet`display: none;`};
   div {
@@ -29,7 +29,7 @@ const EmailLinkWrapper = styled.div`
     width: 1px;
     height: 90px;
     margin: 0 auto;
-    background-color: ${colors.lightSlate};
+    background-color: ${colors.slate};
   }
 `;
 const EmailLink = styled.a`
@@ -42,7 +42,7 @@ const EmailLink = styled.a`
 
   &:hover,
   &:focus {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
 `;
 
@@ -60,7 +60,12 @@ const Email = () => {
         {isMounted && (
           <CSSTransition timeout={3000} classNames="fade">
             <EmailLinkWrapper>
-              <EmailLink href={`mailto:${email}`}>{email}</EmailLink>
+              <EmailLink
+                  href={`mailto:${email}`}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer">
+                {email}
+              </EmailLink>
             </EmailLinkWrapper>
           </CSSTransition>
         )}
