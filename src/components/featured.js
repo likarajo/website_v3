@@ -117,6 +117,9 @@ const FeaturedImg = styled(Img)`
     mix-blend-mode: none;
     filter: none;
   `};
+  ${media.thone`
+    display: none;
+  `};
 `;
 const ImgContainer = styled.a`
   ${mixins.boxShadow};
@@ -127,7 +130,10 @@ const ImgContainer = styled.a`
   background-color: ${colors.white};
   border-radius: ${theme.radius + 1}px;
   transition: ${theme.transition};
-  ${media.tablet`height: 100%;`};
+  ${media.tablet`
+    height: 100%;
+    background: transparent;
+  `};
   ${media.thone`
     display: none;
   `};
@@ -151,8 +157,8 @@ const ImgContainer = styled.a`
     bottom: 0;
     z-index: 3;
     transition: ${theme.transition};
-    background-color: ${colors.navy};
-    mix-blend-mode: screen;
+    background: transparent;
+    mix-blend-mode: none;
   }
 `;
 const Project = styled.div`
