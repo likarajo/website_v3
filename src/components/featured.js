@@ -53,7 +53,6 @@ const ProjectDescription = styled.div`
   font-size: ${fontSizes.large};
   border-radius: ${theme.borderRadius};
   ${media.thone`
-    background-color: transparent;
     padding: 20px 0;
     box-shadow: none;
     &:hover {
