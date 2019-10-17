@@ -38,10 +38,10 @@ const Subtitle = styled.h3`
   font-size: 40px;
   line-height: 1.1;
   color: ${colors.slate};
-  ${media.desktop`font-size: 70px;`};
-  ${media.tablet`font-size: 60px;`};
-  ${media.phablet`font-size: 50px;`};
-  ${media.phone`font-size: 40px;`};
+  ${media.desktop`font-size: 40px;`};
+  ${media.tablet`font-size: 35px;`};
+  ${media.phablet`font-size: 30px;`};
+  ${media.phone`font-size: 25px;`};
 `;
 const Blurb = styled.div`
   margin-top: 25px;

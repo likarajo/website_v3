@@ -91,7 +91,7 @@ const HamburgerInner = styled.div`
   top: 50%;
   left: 0;
   right: 0;
-  transition-duration: 0.22s;
+  transition-duration: 1s;
   transition-property: transform;
   transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
   transform: rotate(${props => (props.menuOpen ? `225deg` : `0deg`)});

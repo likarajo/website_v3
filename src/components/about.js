@@ -17,7 +17,6 @@ const FlexContainer = styled.div`
 `;
 const ContentContainer = styled.div`
   width: 60%;
-  max-width: 480px;
   ${media.tablet`width: 100%;`};
   a {
     ${mixins.inlineLink};
@@ -59,6 +58,10 @@ const Avatar = styled(Img)`
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
+  ${media.tablet`
+    mix-blend-mode: none; 
+    filter: none;
+  `};
 `;
 const AvatarContainer = styled.a`
   ${mixins.boxShadow};
@@ -79,6 +82,9 @@ const AvatarContainer = styled.a`
       mix-blend-mode: normal;
     }
   }
+  ${media.tablet`
+    background: transparent;
+  `};
   &:before,
   &:after {
     content: '';

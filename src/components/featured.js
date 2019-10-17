@@ -38,7 +38,6 @@ const ProjectName = styled.h5`
   margin: 0 0 20px;
   color: ${colors.grey};
   ${media.tablet`font-size: 24px;`};
-  ${media.thone`color: ${colors.white};`};
   a {
     ${media.tablet`display: block;`};
   }
@@ -53,11 +52,10 @@ const ProjectDescription = styled.div`
   font-size: ${fontSizes.large};
   border-radius: ${theme.borderRadius};
   ${media.thone`
-    background-color: transparent;
-    padding: 20px 0;
+    padding: 20px 20px;
     box-shadow: none;
     &:hover {
-      box-shadow: none;
+      box-shadow: 20px;
     }
   `};
   p {
@@ -82,7 +80,6 @@ const TechList = styled.ul`
       margin-right: 0;
     }
     ${media.thone`
-      color: ${colors.lightestSlate};
       margin-right: 10px;
     `};
   }
@@ -114,7 +111,11 @@ const FeaturedImg = styled(Img)`
     object-fit: cover;
     width: auto;
     height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(80%);
+    mix-blend-mode: none;
+    filter: none;
+  `};
+  ${media.thone`
+    display: none;
   `};
 `;
 const ImgContainer = styled.a`
@@ -123,13 +124,15 @@ const ImgContainer = styled.a`
   grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-  background-color: ${colors.green};
+  background-color: ${colors.white};
   border-radius: ${theme.radius + 1}px;
   transition: ${theme.transition};
-  ${media.tablet`height: 100%;`};
+  ${media.tablet`
+    height: 100%;
+    background: transparent;
+  `};
   ${media.thone`
-    grid-column: 1 / -1;
-    opacity: 0.25;
+    display: none;
   `};
   &:hover,
   &:focus {
@@ -151,8 +154,8 @@ const ImgContainer = styled.a`
     bottom: 0;
     z-index: 3;
     transition: ${theme.transition};
-    background-color: ${colors.navy};
-    mix-blend-mode: screen;
+    background: transparent;
+    mix-blend-mode: none;
   }
 `;
 const Project = styled.div`

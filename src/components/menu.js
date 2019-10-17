@@ -24,7 +24,8 @@ const MenuContainer = styled.div`
 const Sidebar = styled.div`
   ${mixins.flexCenter};
   flex-direction: column;
-  background-color: ${colors.lightNavy};
+  background-color: ${colors.white};
+  color: ${colors.purple};
   padding: 50px;
   width: 50vw;
   height: 100%;
@@ -57,7 +58,7 @@ const NavListItem = styled.li`
   `};
   ${media.tiny`font-size: ${fontSizes.smallish};`};
   &:before {
-    display: block;
+    display: none;
     content: '0' counter(item) '.';
     color: ${colors.green};
     font-size: ${fontSizes.small};
