@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from './theme';
 import media from './media';
-const { colors, fontSizes, fonts } = theme;
+const { colors, fontSizes } = theme;
 
 const Heading = styled.h3`
   position: relative;
