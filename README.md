@@ -2,16 +2,45 @@
   <img alt="Logo" src="src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  My website
+  <a href="https://likarajo.netlify.com" target="_blank">
+    My Website
+  </a>
 </h1>
-<p align="center">
-  Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
 <p align="center">
   <a href="https://app.netlify.com/sites/likarajo/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/eaecc789-757c-4260-9bee-035d2154ab7c/deploy-status" alt="Netlify Status" />
   </a>
 </p>
+
+<p align="center">
+  <a href="https://likarajo.netlify.com" target="_blank">
+    <img src="src/images/og.png" width=800 />
+  </a>
+</p>
+
+<p align="center">
+  Built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby
+  <img src="src/images/logo_gatsby.png" width=20 /></a> and hosted with <a href="https://www.netlify.com/" target="_blank"> Netlify <img src="src/images/logo_netlify.png" width=20 /></a>
+</p>
+
+<hr>
+
+<p align="center">
+  Previous versions<br>
+  <br>
+  <a href="https://likarajo.github.io/website_v1" target="_blank">
+    <i>v1</i>&nbsp;&raquo;&nbsp;
+    <img src="https://likarajo.github.io/website_v1/website_v1.png" width=150 height=70/>
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://likarajo.github.io/website_v2" target="_blank">
+    <img src="https://likarajo.github.io/website_v2/website_v2.png" width=150 height=70/>
+    &nbsp;&laquo;&nbsp;
+    <i>v2</i>
+  </a>
+</p>
+
+<hr>
 
 ## Installation and Setup
 1.  **Install [NVM](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)**
