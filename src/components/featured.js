@@ -114,7 +114,8 @@ const FeaturedImg = styled(Img)`
     object-fit: cover;
     width: auto;
     height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(80%);
+    mix-blend-mode: none;
+    filter: none;
   `};
 `;
 const ImgContainer = styled.a`
@@ -123,13 +124,12 @@ const ImgContainer = styled.a`
   grid-row: 1 / -1;
   position: relative;
   z-index: 1;
-  background-color: ${colors.green};
+  background-color: ${colors.white};
   border-radius: ${theme.radius + 1}px;
   transition: ${theme.transition};
   ${media.tablet`height: 100%;`};
   ${media.thone`
-    grid-column: 1 / -1;
-    opacity: 0.25;
+    display: none;
   `};
   &:hover,
   &:focus {

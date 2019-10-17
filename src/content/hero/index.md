@@ -1,7 +1,7 @@
 ---
 title: 'Hello! I am'
 name: 'Rajarshi Chattopadhyay'
-subtitle: '♥ Soccer lover, foodie, travel buff ♥'
+subtitle: 'Gregarious, Soccer lover, Foodie, Travel buff'
 contactText: 'Let us Connect'
 ---
 
