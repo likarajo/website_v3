@@ -38,7 +38,6 @@ const ProjectName = styled.h5`
   margin: 0 0 20px;
   color: ${colors.grey};
   ${media.tablet`font-size: 24px;`};
-  ${media.thone`color: ${colors.white};`};
   a {
     ${media.tablet`display: block;`};
   }
@@ -53,10 +52,10 @@ const ProjectDescription = styled.div`
   font-size: ${fontSizes.large};
   border-radius: ${theme.borderRadius};
   ${media.thone`
-    padding: 20px 0;
+    padding: 20px 20px;
     box-shadow: none;
     &:hover {
-      box-shadow: none;
+      box-shadow: 20px;
     }
   `};
   p {
@@ -81,7 +80,6 @@ const TechList = styled.ul`
       margin-right: 0;
     }
     ${media.thone`
-      color: ${colors.lightestSlate};
       margin-right: 10px;
     `};
   }
