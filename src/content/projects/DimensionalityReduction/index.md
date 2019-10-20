@@ -12,4 +12,4 @@ tech:
 show: 'true'
 ---
 
-Support Vector Machine (SVM) Classifier model with Stochastic Gradient Decent (SGD) using Principal Component Analysis.
+Support Vector Machine (SVM) Classifier model with Stochastic Gradient Decent (SGD) using Principal Component Analysis and Spectral Clustering.
