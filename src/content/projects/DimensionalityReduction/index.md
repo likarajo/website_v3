@@ -1,8 +1,8 @@
 ---
 date: '703'
-title: 'Principal Component Analysis and Spectral Clustering'
+title: 'Dimensionality Reduction'
 image: ''
-github: 'https://github.com/likarajo/PCA_Spectral_Clustering'
+github: 'https://github.com/likarajo/dimensionality_reduction'
 external: ''
 tech:
   - Python3
