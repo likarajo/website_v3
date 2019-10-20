@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
   });
 
   useEffect(() => {
-    fetch('https://api.github.com/repos/likarajo/website_new')
+    fetch('https://api.github.com/repos/likarajo/website')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
