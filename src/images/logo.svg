@@ -1,7 +1,4 @@
-import React from 'react';
-
-const IconLogo = () => (
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
          width="400" height="400" viewBox="0 0 200 200"
          preserveAspectRatio="xMidYMid meet">
         <title>Logo</title>
@@ -27,6 +24,3 @@ const IconLogo = () => (
 65 -53 59 -196 80 -280 41z"/>
         </g>
     </svg>
-);
-
-export default IconLogo;

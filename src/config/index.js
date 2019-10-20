@@ -4,7 +4,7 @@ module.exports = {
     'Rajarshi Chattopadhyay | Personal website',
   siteKeywords:
     'Rajarshi Chattopadhyay, Rajarshi, Chattopadhyay, likarajo, software engineer, back-end engineer, web developer, utdallas',
-  siteUrl: 'https://likarajo.github.io/website_new',
+  siteUrl: 'https://likarajo.github.io/website',
   siteLanguage: 'en_US',
   googleVerification: 'u9_JcggcR-SFxiwtd_McOsm1FEIrfXhIKZOvANZflnY',
   googleAnalyticsID: 'UA-105786857-1',
@@ -52,9 +52,9 @@ module.exports = {
   ],
 
   navHeight: 100,
-  greenColor: '#64ffda',
-  navyColor: '#0a192f',
-  darkNavyColor: '#020c1b',
+  greenColor: '#a31a5a',
+  navyColor: '#c1b1ff',
+  darkNavyColor: '#b2a3ff',
 
   srConfig: (delay = 200) => ({
     origin: 'bottom',
