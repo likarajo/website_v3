@@ -10,5 +10,4 @@ tech:
 show: 'true'
 ---
 
-An article based on my learning outcomes from attending and informational session on Functional Programming. 
-
+An article based on my learning outcomes and experience during my Summer 2019 internship at Copart. 
