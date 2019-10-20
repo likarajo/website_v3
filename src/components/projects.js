@@ -99,7 +99,7 @@ const TechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.xsmall};
-    color: ${colors.slate};
+    color: ${colors.lightSlate};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
