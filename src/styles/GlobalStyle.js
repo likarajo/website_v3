@@ -145,7 +145,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    width: 100%;
+    position: absolute;
+    width: 100vw;
     min-height: 100%;
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
