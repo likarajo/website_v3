@@ -202,9 +202,6 @@ const Projects = ({ data }) => {
             </a>
         </ShowMoreButton>
 
-      <!--ShowMoreButton onClick={() => setShowMore(!showMore)}>
-        Show {showMore ? 'Less' : 'More'}
-      </ShowMoreButton-->
     </ProjectsContainer>
   );
 };
