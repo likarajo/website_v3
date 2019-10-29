@@ -192,9 +192,17 @@ const Projects = ({ data }) => {
         </TransitionGroup>
       </ProjectsGrid>
 
-      <ShowMoreButton onClick={() => setShowMore(!showMore)}>
+        <ShowMoreButton
+            href="https://likarajo.github.io/Projects"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="External Link">
+            Show More
+        </ShowMoreButton>
+
+      <!--ShowMoreButton onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
-      </ShowMoreButton>
+      </ShowMoreButton-->
     </ProjectsContainer>
   );
 };
