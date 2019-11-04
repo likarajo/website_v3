@@ -62,10 +62,6 @@ const Contact = ({ data }) => {
       <EmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
         Contact Me
       </EmailLink>
-
-      <ResumeLink href="https://likarajo.github.io/cv/resume" target="_blank" rel="nofollow noopener noreferrer">
-        My Resume
-      </ResumeLink>
           
     </ContactContainer>
   );
