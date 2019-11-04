@@ -1,5 +1,5 @@
 ---
-date: '503'
+date: '3'
 title: 'Personal Website V3'
 image: ''
 github: 'https://github.com/bchiang7/bchiang7.github.io'
@@ -9,7 +9,7 @@ tech:
   - SCSS
   - JS
   - Github Pages
-show: 'false'
+show: 'true'
 ---
 
 Third iteration of my personal website built with Jekyll and hosted on Github Pages.

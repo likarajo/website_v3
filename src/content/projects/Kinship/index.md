@@ -1,5 +1,5 @@
 ---
-date: '606'
+date: '5'
 title: 'Kinship'
 image: './demo.png'
 github: 'https://github.com/likarajo/kinship'

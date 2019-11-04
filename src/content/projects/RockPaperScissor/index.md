@@ -1,5 +1,5 @@
 ---
-date: '102'
+date: '1'
 title: 'Rock Paper Scissor game'
 image: ''
 github: 'https://github.com/likarajo/rock-paper-scissor'

@@ -1,5 +1,5 @@
 ---
-date: '512'
+date: '4'
 title: 'DevOps CI CD'
 image: ''
 github: 'https://github.com/likarajo/devops-helloworld'

@@ -1,5 +1,5 @@
 ---
-date: '600'
+date: '2'
 title: 'Tetris'
 image: ''
 github: 'https://github.com/likarajo/tetris'

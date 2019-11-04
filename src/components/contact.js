@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
-const ContactContainer = styled(Section)`
+const ContactContainer = styled(Section)
+`
   text-align: center;
   max-width: 600px;
   margin: 0 auto 100px;
@@ -14,7 +15,8 @@ const ContactContainer = styled(Section)`
     ${mixins.inlineLink};
   }
 `;
-const GreenHeading = styled(Heading)`
+const GreenHeading = styled(Heading)
+`
   display: none;
   color: ${colors.green};
   font-size: ${fontSizes.medium};
@@ -58,8 +60,13 @@ const Contact = ({ data }) => {
       <div dangerouslySetInnerHTML={{ __html: html }} />
 
       <EmailLink href={`mailto:${email}`} target="_blank" rel="nofollow noopener noreferrer">
-        Say Hello
+        Contact Me
       </EmailLink>
+
+      <ResumeLink href="https://likarajo.github.io/cv/resume" target="_blank" rel="nofollow noopener noreferrer">
+        My Resume
+      </ResumeLink>
+          
     </ContactContainer>
   );
 };

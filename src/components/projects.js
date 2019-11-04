@@ -8,12 +8,13 @@ import styled from 'styled-components';
 import { theme, mixins, media, Section, Button } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
-const ProjectsContainer = styled(Section)`
+const ProjectsContainer = styled(Section)
+`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
 `;
-const ProjectsTitle = styled.h4`
+const ProjectsTitle = styled.h4 `
   margin: 0 auto 50px;
   font-size: ${fontSizes.h3};
   ${media.tablet`font-size: 24px;`};
@@ -198,7 +199,7 @@ const Projects = ({ data }) => {
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="External Link">
-                Show More
+                Show All
             </a>
         </ShowMoreButton>
 
