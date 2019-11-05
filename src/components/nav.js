@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
-const NavContainer = styled.header`
+const NavContainer = styled.header `
   ${mixins.flexBetween};
   position: fixed;
   top: 0;
@@ -279,7 +279,7 @@ class Nav extends Component {
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <div style={{ transitionDelay: `600ms` }}>
                     <ResumeLink
-                      href="/resume.pdf"
+                      href="https://likarajo.github.io/cv/resume"
                       target="_blank"
                       rel="nofollow noopener noreferrer">
                       Resume

@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'House Price Prediction'
 cover: './demo-hpp.png'
 github: 'https://github.com/likarajo/house_price'

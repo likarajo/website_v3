@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '4'
 title: 'Recommender System'
 image: ''
 github: 'https://github.com/likarajo/recommender'
