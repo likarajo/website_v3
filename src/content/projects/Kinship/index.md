@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Kinship'
-image: './demo.png'
+image: ''
 github: 'https://github.com/likarajo/kinship'
 external: 'https://likarajo.github.io/kinship/'
 tech:

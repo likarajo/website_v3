@@ -5,31 +5,40 @@ import { Layout, Hero, About, Jobs, Featured, Projects, Contact } from '@compone
 import styled from 'styled-components';
 import { mixins, Main } from '@styles';
 
-const MainContainer = styled(Main)`
+const MainContainer = styled(Main)
+`
   ${mixins.sidePadding};
   counter-reset: section;
 `;
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <MainContainer id="content">
-      <Hero data={data.hero.edges} />
-      <About data={data.about.edges} />
-      <Jobs data={data.jobs.edges} />
-      <Featured data={data.featured.edges} />
-      <Projects data={data.projects.edges} />
-      <Contact data={data.contact.edges} />
-    </MainContainer>
-  </Layout>
+const IndexPage = ({ data }) => ( <
+    Layout >
+    <
+    MainContainer id = "content" >
+    <
+    Hero data = { data.hero.edges }
+    /> <
+    About data = { data.about.edges }
+    /> <
+    Jobs data = { data.jobs.edges }
+    /> <
+    Featured data = { data.featured.edges }
+    /> <
+    Projects data = { data.projects.edges }
+    /> <
+    Contact data = { data.contact.edges }
+    /> <
+    /MainContainer> <
+    /Layout>
 );
 
 IndexPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
 };
 
 export default IndexPage;
 
-export const pageQuery = graphql`
+export const pageQuery = graphql `
   {
     hero: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
       edges {
@@ -111,7 +120,6 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            image
             tech
             github
             external

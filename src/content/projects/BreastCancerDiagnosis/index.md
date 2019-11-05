@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Breast Cancer Diagnosis'
-image: './demo.png'
+image: ''
 github: 'https://github.com/likarajo/breastcancer_diagnosis'
 external: 'https://likarajo.github.io/breastcancer_diagnosis/'
 tech:
