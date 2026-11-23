@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sr from '@utils/sr';
 import { srConfig, github } from '@config';
 import styled from 'styled-components';
@@ -52,7 +52,7 @@ const PicContainer = styled.div`
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `;
-const Avatar = styled(Img)`
+const Avatar = styled(GatsbyImage)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
@@ -132,7 +132,7 @@ const About = ({ data }) => {
               href={github}
               target="_blank"
               rel="nofollow noopener noreferrer">
-            <Avatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
+            <Avatar image={getImage(avatar)} alt="Avatar" />
           </AvatarContainer>
         </PicContainer>
       </FlexContainer>
