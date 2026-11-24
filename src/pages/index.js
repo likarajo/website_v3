@@ -60,9 +60,7 @@ export const pageQuery = graphql `
             title
             avatar {
               childImageSharp {
-                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
+                gatsbyImageData(width: 700, quality: 90, placeholder: BLURRED, formats: [AUTO, WEBP])
               }
             }
             skills
@@ -73,7 +71,7 @@ export const pageQuery = graphql `
     }
     jobs: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/jobs/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
@@ -90,7 +88,7 @@ export const pageQuery = graphql `
     }
     featured: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/featured/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
@@ -98,9 +96,7 @@ export const pageQuery = graphql `
             title
             cover {
               childImageSharp {
-                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
+                gatsbyImageData(width: 700, quality: 90, placeholder: BLURRED, formats: [AUTO, WEBP])
               }  
             }
             tech
@@ -114,7 +110,7 @@ export const pageQuery = graphql `
     }
     projects: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
